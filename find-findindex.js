@@ -38,6 +38,6 @@ removeUser(users, 'akagen') // undefined
 function removeUser(usersArray, username) { 
   let userIndex = usersArray.findIndex(obj => obj.username===username);
   if (userIndex !== -1){
-    return usersArray.splice(userIndex, 1);
+    return usersArray.splice(userIndex, 1)[0];
     }
 }
